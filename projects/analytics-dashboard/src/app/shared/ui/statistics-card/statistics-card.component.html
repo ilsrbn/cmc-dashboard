@@ -1,0 +1,30 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>
+      {{ total }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{title}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content *ngIf="hasStats">
+    <div class="flex-center">
+      <mat-progress-bar diameter="200" mode="determinate" [value]="activePercent"></mat-progress-bar>
+    </div>
+
+  </mat-card-content>
+  <mat-card-footer *ngIf="hasStats">
+    <div class="flex">
+      <section class="green">
+        <h1>{{ activePercent }}% ({{ active }})</h1>
+        <h3>Активные {{title}}</h3>
+      </section>
+      <section class="red">
+        <h1>{{ nonActivePercent }}% ({{ nonActive }})
+        </h1>
+        <h3>Неактивные {{title}}</h3>
+      </section>
+    </div>
+  </mat-card-footer>
+
+</mat-card>

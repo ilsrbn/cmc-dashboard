@@ -1,0 +1,14 @@
+.logo {
+  --width: 32px;
+  max-width: var(--width);
+  width: var(--width);
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  margin-right: 2rem;
+
+}
+
+.mat-toolbar {
+  color: #000055;
+}

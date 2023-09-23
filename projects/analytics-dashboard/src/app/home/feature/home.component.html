@@ -1,0 +1,7 @@
+<section>
+  <home-statistics *ngIf="analytics$ | async as analytics" [analytics]="analytics"></home-statistics>
+
+  <app-spacer [size]="2"></app-spacer>
+
+  <home-table *ngIf="listings$ | async as listings" [listings]="listings"></home-table>
+</section>

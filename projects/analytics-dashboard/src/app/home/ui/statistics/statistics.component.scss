@@ -1,0 +1,12 @@
+section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+
+  main {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+
+  }
+}

@@ -1,0 +1,49 @@
+.mat-md-card {
+  &-header {
+    padding: 1rem;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  }
+
+  &-title {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #000055;
+  }
+
+  &-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: rgba($color: #000033, $alpha: 0.6);
+  }
+
+  &-content {
+    padding: 2rem 1rem 3rem;
+  }
+
+  &-footer {
+    padding: 0 1rem;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+}

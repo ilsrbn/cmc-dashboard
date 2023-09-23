@@ -1,0 +1,12 @@
+<section>
+  <main>
+    <app-statistics-card title="Пользователи" [active]="analytics.users.active"
+      [total]="analytics.users.total"></app-statistics-card>
+    <app-statistics-card title="Токены/пары" [total]="analytics.listings.total"
+      [active]="analytics.listings.active"></app-statistics-card>
+  </main>
+
+  <aside>
+    <app-statistics-card title="Подписки" [total]="analytics.subscriptions"></app-statistics-card>
+  </aside>
+</section>
